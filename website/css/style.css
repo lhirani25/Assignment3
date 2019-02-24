@@ -27,7 +27,6 @@ header   {
   background: #222;
   color: #FFF;
   padding: 20px 30px;
-  
 }
 
 /* logo */
@@ -41,8 +40,7 @@ header   {
   width: 200px;
   border-radius: 3px;
   margin-right: 8px;
-  vertical-align: middle;
-  float:right;
+  float:left;
 }
 #logo span   {
   display: inline-block;
@@ -235,11 +233,8 @@ padding: 6px 8px 6px 6px;
   }
   #upper2
   {
-  background: #222;
-  color: #FFF;
-  height:100px;
-  float:right;
-  display: inline-block;
+	float:left
+	position: absolute;
   }
   #main_logo
   {
