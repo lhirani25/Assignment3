@@ -221,20 +221,22 @@ padding: 6px 8px 6px 6px;
   color:#FFF;
     
     
-}#upper1{
-  /*background-color:#fff2df;*/
-  background: #222;
+}
+#upper1{
+ 
+  background-color: #222;
   color: #FFF;
   width:55%;
-  height:100px;
-  float:left;
-  display: inline-block;
-  
+  height:140px;
+  float:left
   }
   #upper2
   {
-	float:left
-	position: absolute;
+	background-color: #222;
+	float:left;
+	color: #FFF;
+	height:140px;
+	 width:45%;
   }
   #main_logo
   {
@@ -256,12 +258,17 @@ padding: 6px 8px 6px 6px;
   }
   #login_button
   {
-    background-color:#674d3c;
+	  font-size:12px;
+	padding: 5px;
+    background-color:#66757F;
     border:#000 2px ridge;
-    color:#FFF;
-	font-size: 12px;
 	border-radius: 8px;
-	padding: 7px;
+    color:#FFF;
+    border-color:#000;
+    text-shadow:#999 2px; 
+	height:30px;  
+	  
+    
   }
   a
   {
@@ -332,15 +339,12 @@ padding: 6px 8px 6px 6px;
   }
   #create_acc
   {
-    font-size:15px;
-	padding: 7px;
-    background-color:#674d3c;
+    background-color:#66757F;
     border:#000 2px ridge;
-	border-radius: 8px;
     color:#FFF;
-    border-color:#000;
-    text-shadow:#999 2px; 
-	height:20px;  
+	font-size: 15px;
+	border-radius: 8px;
+	padding: 7px;
 	
   }
   .tdlower
@@ -385,3 +389,15 @@ nav ul li a:hover   {
   background: #444;
 }
 
+.upper_button
+{
+	font-size:10px;
+	padding: 5px;
+    background-color:#66757F;
+    border:#000 2px ridge;
+	border-radius: 8px;
+    color:#FFF;
+    border-color:#000;
+    text-shadow:#999 2px; 
+	height:30px;  
+}
