@@ -3,18 +3,38 @@
 <head>             <!-- Self Reflection:-It was an intriguing assignment which required our diligent efforts to create the website. we learnt about how essential it is to focus on every specific details that we show on the website, and how it affects usability.
 				   This was an assignment that gave us more visibility in the technicalities involved in creating a website.As a team , we tested each other's pages to ensure consistency and usability.It took approximately 4 hours for each of us to this assignmnet-->                         
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Login</title>
+	<title>Login/Sign Up</title>
 	<link rel="stylesheet" type="text/css" href="../website/css/style.css">
+	<script>
+	function git()
+	{
+		window.location.assign("https://github.com/lhirani25/Assignment3/tree/master/website");
+	}
+	function aboutus()
+	{
+		window.location.assign("AboutUsPage.html");
+	}
+	function readme()
+	{
+		window.location.assign("ReadMe.html");
+	}
+		function gotodash()
+	{
+		window.location.assign("index.html");
+	}
+		
+	</script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body onload="document.getElementById('tx1').focus()">
+<body>
 <div id="main_div">
 	 <!-- the header -->
-    <header>
-		<a id="logo" href="#">
-            <img src="img/canvas.png" alt="Logo">
-			<div id="upper2"><table>
+	<div id="upper1"><a id="logo" alt="logo" href="#"><img src="img/canvas.png" id="main_logo"/></a>
+	</div>
+		
+	<div id="upper2">
+		<table>
                 <tr id="login_tr">
                    	<th>Email or Phone</th>
                     <th>Password</th>
@@ -22,28 +42,31 @@
     			<tr>
                 	<td><input type="text" name="tx1" /></td>
                     <td><input type="password"/></td>
-					<td><a href="index.html" id="login_button" role="button"> Log in </a></td>
+					<td><input type="button" value="Log in" onclick="gotodash()" id="login_button"/></td>
                 </tr>
                 <tr>
                 <td></td>
                 <td colspan="2"><a href="#" id="forgot"> Forgot Password</a></td>
                 </tr>
+				<tr>
+					
+					
+					
+					<td><input type="button" value="Github" onclick="git()" class="upper_button" /></td>
+					<td><input type="button" value="About Us" onclick="aboutus()" class="upper_button"/></td>
+					<td><input type="button" value="Read Me" onclick="readme()" class="upper_button"/></td>
+					
+				</tr>
 			</table>
-		</div>   
-		 <nav>
-            <ul>
-                <li><a href="https://github.com/lhirani25/Assignment3/tree/master/website">Github</a></li>
-                <li><a href="AboutUsPage.html">About</a></li>
-            </ul>
-        </nav>
-        </a>
-    </header>
+</div>   
+	</div>
+      
 
 	 
        
     		<div id="lower1">
             				<p id="plower_1">Access your courses on the go!  </p>
-            				<img src="../website/img/students.jpg" id="connect_img"/>
+            				<img src="../website/img/students.jpg" id="connect_img" alt="students"/>
             </div>
             
             
@@ -155,9 +178,9 @@
                                     	<td class="font">By clicking create an account, you agree to our terms and confirm that you have read our Data Policy, including our Cookie Use Policy.</td>
                                      </tr>
                                      <tr>
-                                     	<td>
-											<a href="index.html" id="create_acc" role="button"> Create an account</a>
-										 </td>
+                                     	
+												<td><input type="button" value="Create an account" onclick="gotodash()" id="create_acc"></td>
+						
                                       </tr>  
                         
                                       
@@ -165,6 +188,6 @@
                                      
                                      </table>
             </div>
-</div>
+
 </body>
 </html>
